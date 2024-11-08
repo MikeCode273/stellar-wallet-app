@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Wallet</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        button { margin: 10px 0; }
+        input { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>Stellar Wallet</h1>
+    <div id="account-info">
+        <h2>Account Information</h2>
+        <p>Public Key: <span id="public-key"></span></p>
+        <p>Secret Key: <span id="secret-key"></span></p>
+        <p>Balance: <span id="balance"></span> XLM</p>
+        <button onclick="createAccount()">Create New Account</button>
+        <button onclick="checkBalance()">Check Balance</button>
+    </div>
+    <div id="send-payment">
+        <h2>Send Payment</h2>
+        <input type="text" id="destination" placeholder="Destination Public Key">
+        <input type="number" id="amount" placeholder="Amount (XLM)">
+        <button onclick="sendPayment()">Send Payment</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
